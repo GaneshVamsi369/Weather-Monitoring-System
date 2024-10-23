@@ -2,6 +2,8 @@
 
 This project is a **real-time weather monitoring system** built using **React** and the **OpenWeatherMap API**. The system fetches weather data for major cities in India (Delhi, Mumbai, Chennai, Bangalore, Kolkata, Hyderabad) and displays it in a user-friendly UI. The system provides detailed weather information, daily summaries, alerts, and visualizations.
 
+### Development Link: [Click Here](https://weather-monitoring-system-taupe.vercel.app/)
+
 ## Features
 
 - Real-time weather data for specified cities in India.
@@ -79,3 +81,5 @@ This command will start the React development server, and the application will b
 ├── package.json             # Project metadata and dependencies
 └── ...
 ```
+![Screenshot (103)](https://github.com/user-attachments/assets/e30a3549-048c-4fa1-a823-aa5eca10e35b)
+![Screenshot (104)](https://github.com/user-attachments/assets/b34ddb28-92c7-4224-b32d-b3abebf9b5b9)
