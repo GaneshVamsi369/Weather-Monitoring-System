@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Weather Monitoring System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **real-time weather monitoring system** built using **React** and the **OpenWeatherMap API**. The system fetches weather data for major cities in India (Delhi, Mumbai, Chennai, Bangalore, Kolkata, Hyderabad) and displays it in a user-friendly UI. The system provides detailed weather information, daily summaries, alerts, and visualizations.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Real-time weather data for specified cities in India.
+- Displays temperature, weather condition, humidity, wind speed, and last update time.
+- Temperature alerts when the current temperature exceeds a user-defined threshold.
+- Allows users to select the temperature unit (Celsius or Fahrenheit).
+- Responsive design with a clean, modern UI.
+- Alerts for temperature conditions that breach predefined thresholds.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: Frontend JavaScript library for building user interfaces.
+- **OpenWeatherMap API**: External API to fetch real-time weather data.
+- **Axios**: Promise-based HTTP client for making API calls.
+- **Bootstrap**: CSS framework to style the layout and components.
+- **React Icons**: For displaying weather icons such as sun, clouds, wind, humidity, etc.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## API Key
 
-### `npm test`
+The project uses the OpenWeatherMap API to retrieve weather data. You will need an API key to use this service. If you don't have one, you can sign up for free at [OpenWeatherMap](https://openweathermap.org/).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### How to add the API key
 
-### `npm run build`
+1. After signing up on OpenWeatherMap, go to the **API Keys** section and generate a key.
+2. Open the `App.js` file in the project.
+3. Replace the following line with your own API key:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```js
+const apiKey = "your_api_key_here";
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Run the Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone the Repository
 
-### `npm run eject`
+```bash
+git clone https://github.com/GaneshVamsi369/Weather-Monitoring-System.git
+cd weather-monitoring-system
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Make sure you have Node.js installed. Then, in the project directory, run:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Start the Development Server
 
-## Learn More
+To run the project locally:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This command will start the React development server, and the application will be available at [http://localhost:3000](http://localhost:3000).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+.
+├── public
+│   ├── index.html           # The main HTML file
+│   └── ...
+├── src
+│   ├── App.js               # Main React component where weather data is fetched and displayed
+│   ├── App.css              # Custom styles for the application
+│   ├── index.js             # Main entry point for the React app
+│   └── ...
+├── README.md                # Project documentation
+├── package.json             # Project metadata and dependencies
+└── ...
+```

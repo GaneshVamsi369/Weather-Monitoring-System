@@ -1,38 +1,139 @@
-.App {
+body {
+  background: linear-gradient(135deg, #dbeeff, #ffffff);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  font-weight: 300;
+  color: #333;
+}
+
+h1 {
+  font-size: 36px;
+  color: #1976D2;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.card {
+  background: linear-gradient(145deg, #f0f8ff, #cde5fa);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card h3 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card p {
+  font-size: 18px;
+  color: #555;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-data .card {
+  margin-bottom: 20px;
+}
+
+.weather-data .card-body {
+  padding: 20px;
+}
+
+.weather-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.temp-value {
+  font-size: 50px;
+  color: #ff6347; 
+  font-weight: bold;
+}
+
+.alerts .list-group-item {
+  font-weight: bold;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.alerts .list-group-item-danger {
+  background-color: #ffe5e5;
+  border-color: #ff9999;
+  color: #d9534f;
+  font-size: 18px;
+}
+
+.alerts p {
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+}
+
+input, select {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  width: 120px;
+}
+
+button {
+  background-color: #1976D2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1259a2;
+}
+
+.temp-label {
+  font-size: 30px;
+  color: #1976D2;
+}
+
+.info-row {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-icon {
+  margin-right: 8px;
+  font-size: 24px;
 }
